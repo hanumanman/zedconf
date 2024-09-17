@@ -2,7 +2,6 @@
   {
     "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
-      ";": "command_palette::Toggle",
       "Y": ["workspace::SendKeystrokes", "y $"],
       "L": "pane::ActivateNextItem",
       "H": "pane::ActivatePrevItem",
@@ -19,7 +18,11 @@
       "space c a": "editor::ToggleCodeActions",
       "enter": ["workspace::SendKeystrokes", "o escape"],
       "space enter": ["workspace::SendKeystrokes", "k o escape"],
-      "ctrl-j": "workspace::ToggleBottomDock"
+      "ctrl-j": "workspace::ToggleBottomDock",
+      "space l": [
+        "workspace::SendKeystrokes",
+        "y i w escape o console.log('logging space escape p a ' , escape p a ) escape"
+      ]
     }
   },
   {
