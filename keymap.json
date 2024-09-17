@@ -1,0 +1,44 @@
+[
+  {
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      ";": "command_palette::Toggle",
+      "Y": ["workspace::SendKeystrokes", "y $"],
+      "L": "pane::ActivateNextItem",
+      "H": "pane::ActivatePrevItem",
+      "tab": "pane::AlternateFile",
+      "space f": "editor::Format",
+      "space s": "file_finder::Toggle",
+      "space d": "outline::Toggle",
+      "space r": "editor::Rename",
+      "space g": "pane::DeploySearch",
+      "space b c": "pane::CloseInactiveItems",
+      "space n": "project_panel::ToggleFocus",
+      "space x": "pane::CloseActiveItem",
+      "space q": "diagnostics::Deploy",
+      "space c a": "editor::ToggleCodeActions",
+      "enter": ["workspace::SendKeystrokes", "o escape"],
+      "space enter": ["workspace::SendKeystrokes", "k o escape"],
+      "ctrl-j": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "space f": "editor::Format"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-n": "workspace::NewTerminal",
+      "ctrl-w": "workspace::ToggleZoom"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "space n": "workspace::ToggleLeftDock"
+    }
+  }
+]
