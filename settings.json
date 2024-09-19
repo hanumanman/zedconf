@@ -18,6 +18,7 @@
   "format_on_save": "off",
   "soft_wrap": "editor_width",
   "current_line_highlight": "gutter",
+  "cursor_blink": false,
   "code_actions_on_format": {
     "source.organizeImports": true
   },
@@ -25,5 +26,22 @@
     "inline_blame": {
       "enabled": false
     }
+  },
+  "experimental.theme_overrides": {
+    "background.appearance": "blurred",
+    "background": "#3a352fC0",
+    "editor.gutter.background": "#000000C0",
+    "tab_bar.background": "#000000C0",
+    "editor.background": "#000000C0",
+    "terminal.background": "#000000C0",
+    "toolbar.background": "#000000C0",
+    "tab.active_background": "#101010C0",
+    "tab.inactive_background": "#000000A0",
+    "status_bar.background": "#000000C0",
+    "title_bar.background": "#000000C0",
+    "panel.background": "#000000C0",
+    "border.variant": "#000000A0",
+    "scrollbar.track.border": "#000000A0",
+    "editor.active_line.background": "#000000A0"
   }
 }
